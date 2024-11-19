@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        label { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: brown;}
+    </style>
+</head>
+<body>
+    <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Formularios</h1>
+    <form action="procesa.php" method="post">
+        <fieldset>
+            <legend style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Datos Personales</legend>
+            <p>
+                <label for="nombre">Nombre: </label>           
+                <input id="nombre" type="text"
+                name="nombre"> <!--En vez de <br> colocamos un <p> en cada input-->
+            </p>
+            <p>
+                <label for="apel">Apellidos: </label>
+                <input id="apel" type="text"
+                name="apellidos"> <!--En 'id' no hace falta que sea el mismo nombre-->
+            </p>
+        </fieldset>  
+        <input style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" type="submit" value="Enviar">     
+    </form>
+</body>
+</html>

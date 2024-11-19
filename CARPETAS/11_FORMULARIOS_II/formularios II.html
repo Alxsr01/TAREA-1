@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios II (Tipo de inputs)</title>
+</head>
+<body>
+    <h1>Tipo de Inputs</h1>
+    <form action="procesa.php">
+    <fieldset>
+        <legend>Datos personales</legend>
+    <p>
+        <label for="nom">Nombre</label>
+        <input type="text" 
+        maxlength="8" required autofocus
+        name="nombre" placeholder="Escriba su nombre completo"
+        id="nom"> <!--'for' igual que 'id'-->      
+    </p>
+    <p>
+        <label for="pob">Población</label>
+        <input type="text" value="Alcázar de San Juan"
+        maxlength="8" 
+        name="pob" 
+        id="pob"> <!--'for' igual que 'id'-->      
+    </p>
+    <p>
+        <label for="contrase">Contraseña</label>
+        <input type="password" 
+        maxlength="8" 
+        minlength="4" required
+        name="contraseña" 
+        id="contrase">        
+    </p>
+    <p>
+        <label for="hombre">Hombre:</label>
+        <input type="radio" value="H" checked id="hombre" name="genero">
+        <label for="mujer">Mujer:</label>
+        <input type="radio" value="M" name="genero"> <!--Si escribes checked id en los dos, se marcará el último-->
+    </p>
+    <p>
+        <label for="fumador">Fumador</label>
+        <input type="checkbox" name="fuma" id="fumador">
+    </p>
+    </fieldset>
+    <p>
+        <label for="prov">Provincia:</label>
+        <select name="prov" id="prov">
+            <option value="--" selected>--</option>
+            <option value="cr">Ciudad Real</option>
+            <option value="to">Toledo</option>
+            <option value="cu">Cuenca</option>
+            <option value="ab">Albacete</option>
+            <option value="gu">Guadalaja</option>
+        </select>
+        <p>    
+        <p>
+        <label for="obs:">Observaciones</label>
+        <textarea name="obs" id="obs"
+        cols="10" rows="6">
+             Escriba algo..
+        </textarea>
+        </p>
+         <p>
+        <label for="color">Color</label>
+        <input type="color" name="color" id="color">
+         </p>
+        <p>
+        <label for="fecha-nac">Fehca de nacimiento</label>
+        <input type="date" name="fecha-nac" id="fecha-nac">
+        </p>
+        <p>
+        <label for="edad">Edad</label>
+        <input type="number" name="edad" id="edad" min="0" max="100">
+        </p>
+        <p>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+        </p>
+        <p>
+        <label for="foto">Adjunta foto</label>
+        <input type="file" name="foto" id="foto">
+        </p>
+        <p>
+        <label for="Edad">Edad</label>
+        <input type="range" name="edad" id="edad" min="10" max="100">
+        </p>
+    </p>
+    <!--Botones de envío y reset-->
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset"
+        value="Reiniciar Formulario">
+    </p>
+</form>
+</body>
+</html>
